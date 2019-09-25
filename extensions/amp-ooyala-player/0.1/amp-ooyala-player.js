@@ -109,8 +109,8 @@ class AmpOoyalaPlayer extends AMP.BaseElement {
     const playerVersion = el.getAttribute('data-playerversion') || '';
     if (playerVersion.toLowerCase() == 'v4') {
       src =
-        'https://player.ooyala.com/static/v4/sandbox/amp_iframe/' +
-        'skin-plugin/amp_iframe.html?pcode=' +
+        'https://player.ooyala.com/static/v4/production/' +
+        'skin-plugin/iframe.html?pcode=' +
         encodeURIComponent(this.pCode_);
       const configUrl = el.getAttribute('data-config');
       if (configUrl) {
